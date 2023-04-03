@@ -114,7 +114,7 @@ fn get_vanity_wallet(
 }
 
 fn main() {
-    let input = "0A4"; // The desired prefix or suffix choose from  e.g. "A B C D E F" and "0 1 2 3 4 5 6 7 8 9"
+    let input = "0000"; // The desired prefix or suffix choose from  e.g. "A B C D E F" and "0 1 2 3 4 5 6 7 8 9"
     let is_checksum = true; // Whether the input is case-sensitive
     let is_suffix = false; // Whether the input is a suffix or a prefix. true for suffix (meaning at the end of the address)
 
