@@ -2,7 +2,7 @@ use rand::Rng;
 use secp256k1::PublicKey;
 use sha3::{Digest, Keccak256};
 
-const STEP: u32 = 1000;
+const STEP: u32 = 1;
 
 fn private_to_address(private_key: &[u8]) -> String {
     let secp = secp256k1::Secp256k1::new();
@@ -112,10 +112,9 @@ fn get_vanity_wallet(
         }
     }
 }
-
 fn main() {
     let input = "0000"; // The desired prefix or suffix choose from  e.g. "A B C D E F" and "0 1 2 3 4 5 6 7 8 9"
-    let is_checksum = true; // Whether the input is case-sensitive
+    let is_checksum = false; // Whether the input is case-sensitive
     let is_suffix = false; // Whether the input is a suffix or a prefix. true for suffix (meaning at the end of the address)
 
     match get_vanity_wallet(input, is_checksum, is_suffix) {
