@@ -4,17 +4,6 @@
 
 This Rust program generates Ethereum addresses and their corresponding private keys. It uses multi-threading to speed up the process and allows you to specify certain conditions for the generated address, such as a specific prefix or suffix and whether it should be a checksum address.
 
-## Prerequisites
-
-- Rust programming language
-- Cargo package manager
-- Required Rust libraries:
-  - `rand`
-  - `rayon`
-  - `secp256k1`
-  - `sha3`
-  - `hex`
-
 ## Installation
 
 1. Clone the repository:
