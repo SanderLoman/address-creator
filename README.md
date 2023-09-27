@@ -19,17 +19,12 @@ This Rust program generates Ethereum addresses and their corresponding private k
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-repo/ethereum-address-generator.git
+    git clone https://github.com/SanderLoman/address-creator.git
     ```
 
 2. Navigate to the project directory:
     ```bash
-    cd ethereum-address-generator
-    ```
-
-3. Install the required Rust libraries:
-    ```bash
-    cargo install
+    cd address-creator
     ```
 
 ## Usage
@@ -44,14 +39,6 @@ This Rust program generates Ethereum addresses and their corresponding private k
 3. The generated address and private key will be displayed on the console, along with the number of attempts made and the time taken.
 
 ## Code Explanation
-
-### Libraries Used
-
-- `rand`: For generating random private keys.
-- `rayon`: For parallelization.
-- `secp256k1`: For generating public keys from private keys.
-- `sha3`: For hashing.
-- `hex`: For hexadecimal encoding and decoding.
 
 ### Functions
 
